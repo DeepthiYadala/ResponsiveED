@@ -1,5 +1,7 @@
 package ResponsiveEDUserManagementTestScript;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -16,6 +18,7 @@ public class UserManagementDropDwnHandle extends BaseClass{
 	public void UserManagementAllDropDwnHandle() throws Exception
 	{
 		AdministratorDashboardPage ad = new AdministratorDashboardPage(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		ad.getUserMenu().click();
 		Thread.sleep(2000);
 		UserManagementPage um = new UserManagementPage(driver);
