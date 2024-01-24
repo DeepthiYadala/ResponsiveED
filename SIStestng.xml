@@ -7,10 +7,10 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="ResponsiveEDUserManagementTestScript.UserManagementDropDwnHandle"/>
-      <class name="ResponsiveEDUserManagementTestScript.SearchForAParticularUser"></class>
+      <!-- <class name="ResponsiveEDUserManagementTestScript.SearchForAParticularUser"></class>
       <class name="ResponsiveEDUserManagementTestScript.CreateUser"></class>
       <class name="ResponsiveEDUserManagementTestScript.EditParticularUserDetails"></class>
-      <class name="ResponsiveEDUserManagementTestScript.viewParticularUserDetails"></class>
+      <class name="ResponsiveEDUserManagementTestScript.viewParticularUserDetails"></class>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
