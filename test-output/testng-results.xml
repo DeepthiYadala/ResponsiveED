@@ -1,156 +1,351 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="18" passed="5" failed="1" skipped="0">
+<testng-results ignored="10" total="15" passed="1" failed="2" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-23T21:53:23 IST" name="Default suite" finished-at="2024-01-23T21:57:46 IST" duration-ms="262687">
+  <suite started-at="2024-01-24T10:26:59 IST" name="Default suite" finished-at="2024-01-24T10:32:14 IST" duration-ms="315841">
     <groups>
     </groups>
-    <test started-at="2024-01-23T21:53:23 IST" name="Default test" finished-at="2024-01-23T21:57:46 IST" duration-ms="262687">
+    <test started-at="2024-01-24T10:26:59 IST" name="Default test" finished-at="2024-01-24T10:32:14 IST" duration-ms="315841">
       <class name="ResponsiveEDUserManagementTestScript.viewParticularUserDetails">
-        <test-method is-config="true" signature="connectionwithdatabase()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33bc72d1]" started-at="2024-01-23T21:53:23 IST" name="connectionwithdatabase" finished-at="2024-01-23T21:53:23 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="connectionwithdatabase()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33a053d]" started-at="2024-01-24T10:26:58 IST" name="connectionwithdatabase" finished-at="2024-01-24T10:26:59 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectionwithdatabase -->
-        <test-method is-config="true" signature="lanchbrowser()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33bc72d1]" started-at="2024-01-23T21:53:24 IST" name="lanchbrowser" finished-at="2024-01-23T21:53:30 IST" duration-ms="5844" status="PASS">
+        <test-method is-config="true" signature="lanchbrowser()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33a053d]" started-at="2024-01-24T10:26:59 IST" name="lanchbrowser" finished-at="2024-01-24T10:30:35 IST" duration-ms="216148" status="FAIL">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [--browser, chrome, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [--browser, chrome, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at ResponsiveEDGenericUtility.BaseClass.lanchbrowser(BaseClass.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, chrome, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:144)
+at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:299)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lanchbrowser -->
-        <test-method is-config="true" signature="loginoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33bc72d1]" started-at="2024-01-23T21:53:30 IST" name="loginoperation" finished-at="2024-01-23T21:53:32 IST" duration-ms="2378" status="PASS">
+        <test-method is-config="true" signature="loginoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33a053d]" started-at="2024-01-24T10:30:35 IST" name="loginoperation" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706072435341" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginoperation -->
-        <test-method signature="viewUserDetails()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33bc72d1]" started-at="2024-01-23T21:53:32 IST" name="viewUserDetails" finished-at="2024-01-23T21:54:12 IST" duration-ms="39930" status="PASS">
+        <test-method signature="viewUserDetails()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33a053d]" started-at="2024-01-24T10:30:35 IST" name="viewUserDetails" finished-at="2024-01-24T10:30:35 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [--browser, chrome, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [--browser, chrome, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at ResponsiveEDGenericUtility.BaseClass.lanchbrowser(BaseClass.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, chrome, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:144)
+at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:299)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewUserDetails -->
-        <test-method is-config="true" signature="logoutoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33bc72d1]" started-at="2024-01-23T21:54:12 IST" name="logoutoperation" finished-at="2024-01-23T21:54:16 IST" duration-ms="4475" status="PASS">
+        <test-method is-config="true" signature="logoutoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33a053d]" started-at="2024-01-24T10:30:35 IST" name="logoutoperation" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706072435366" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutoperation -->
-        <test-method is-config="true" signature="closewindow()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33bc72d1]" started-at="2024-01-23T21:54:16 IST" name="closewindow" finished-at="2024-01-23T21:54:17 IST" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="closewindow()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33a053d]" started-at="2024-01-24T10:30:35 IST" name="closewindow" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706072435371" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closewindow -->
-        <test-method is-config="true" signature="closeconnectionwithdatabase()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33bc72d1]" started-at="2024-01-23T21:57:47 IST" name="closeconnectionwithdatabase" finished-at="2024-01-23T21:57:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeconnectionwithdatabase()[pri:0, instance:ResponsiveEDUserManagementTestScript.viewParticularUserDetails@33a053d]" started-at="2024-01-24T10:32:14 IST" name="closeconnectionwithdatabase" finished-at="2024-01-24T10:32:14 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeconnectionwithdatabase -->
       </class> <!-- ResponsiveEDUserManagementTestScript.viewParticularUserDetails -->
       <class name="ResponsiveEDUserManagementTestScript.EditParticularUserDetails">
-        <test-method is-config="true" signature="lanchbrowser()[pri:0, instance:ResponsiveEDUserManagementTestScript.EditParticularUserDetails@710c2b53]" started-at="2024-01-23T21:54:41 IST" name="lanchbrowser" finished-at="2024-01-23T21:54:43 IST" duration-ms="2262" status="PASS">
+        <test-method is-config="true" signature="lanchbrowser()[pri:0, instance:ResponsiveEDUserManagementTestScript.EditParticularUserDetails@456abb66]" started-at="2024-01-24T10:30:35 IST" name="lanchbrowser" finished-at="2024-01-24T10:30:36 IST" duration-ms="723" status="FAIL">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [--browser, chrome, --output, json]
+error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: dns error: No such host is known. (os error 11001)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [--browser, chrome, --output, json]
+error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: dns error: No such host is known. (os error 11001)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at ResponsiveEDGenericUtility.BaseClass.lanchbrowser(BaseClass.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, chrome, --output, json]
+error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: dns error: No such host is known. (os error 11001)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:144)
+at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:299)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lanchbrowser -->
-        <test-method is-config="true" signature="loginoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.EditParticularUserDetails@710c2b53]" started-at="2024-01-23T21:54:43 IST" name="loginoperation" finished-at="2024-01-23T21:54:46 IST" duration-ms="2332" status="PASS">
+        <test-method is-config="true" signature="loginoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.EditParticularUserDetails@456abb66]" started-at="2024-01-24T10:30:36 IST" name="loginoperation" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706072436102" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginoperation -->
-        <test-method signature="EditParticularUser()[pri:0, instance:ResponsiveEDUserManagementTestScript.EditParticularUserDetails@710c2b53]" started-at="2024-01-23T21:54:46 IST" name="EditParticularUser" finished-at="2024-01-23T21:55:30 IST" duration-ms="44350" status="PASS">
+        <test-method signature="EditParticularUser()[pri:0, instance:ResponsiveEDUserManagementTestScript.EditParticularUserDetails@456abb66]" started-at="2024-01-24T10:30:36 IST" name="EditParticularUser" finished-at="2024-01-24T10:30:36 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [--browser, chrome, --output, json]
+error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: dns error: No such host is known. (os error 11001)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [--browser, chrome, --output, json]
+error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: dns error: No such host is known. (os error 11001)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at ResponsiveEDGenericUtility.BaseClass.lanchbrowser(BaseClass.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, chrome, --output, json]
+error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: dns error: No such host is known. (os error 11001)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:144)
+at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:299)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EditParticularUser -->
-        <test-method is-config="true" signature="logoutoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.EditParticularUserDetails@710c2b53]" started-at="2024-01-23T21:55:30 IST" name="logoutoperation" finished-at="2024-01-23T21:55:34 IST" duration-ms="4423" status="PASS">
+        <test-method is-config="true" signature="logoutoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.EditParticularUserDetails@456abb66]" started-at="2024-01-24T10:30:36 IST" name="logoutoperation" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706072436105" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutoperation -->
-        <test-method is-config="true" signature="closewindow()[pri:0, instance:ResponsiveEDUserManagementTestScript.EditParticularUserDetails@710c2b53]" started-at="2024-01-23T21:55:34 IST" name="closewindow" finished-at="2024-01-23T21:55:35 IST" duration-ms="242" status="PASS">
+        <test-method is-config="true" signature="closewindow()[pri:0, instance:ResponsiveEDUserManagementTestScript.EditParticularUserDetails@456abb66]" started-at="2024-01-24T10:30:36 IST" name="closewindow" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706072436111" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closewindow -->
       </class> <!-- ResponsiveEDUserManagementTestScript.EditParticularUserDetails -->
       <class name="ResponsiveEDUserManagementTestScript.SearchForAParticularUser">
-        <test-method is-config="true" signature="lanchbrowser()[pri:0, instance:ResponsiveEDUserManagementTestScript.SearchForAParticularUser@14028087]" started-at="2024-01-23T21:55:35 IST" name="lanchbrowser" finished-at="2024-01-23T21:55:38 IST" duration-ms="3526" status="PASS">
+        <test-method is-config="true" signature="lanchbrowser()[pri:0, instance:ResponsiveEDUserManagementTestScript.SearchForAParticularUser@2a3a299]" started-at="2024-01-24T10:30:36 IST" name="lanchbrowser" finished-at="2024-01-24T10:30:43 IST" duration-ms="7001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lanchbrowser -->
-        <test-method is-config="true" signature="loginoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.SearchForAParticularUser@14028087]" started-at="2024-01-23T21:55:38 IST" name="loginoperation" finished-at="2024-01-23T21:55:41 IST" duration-ms="2330" status="PASS">
+        <test-method is-config="true" signature="loginoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.SearchForAParticularUser@2a3a299]" started-at="2024-01-24T10:30:43 IST" name="loginoperation" finished-at="2024-01-24T10:30:45 IST" duration-ms="2411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginoperation -->
-        <test-method signature="SearchForParticularUser()[pri:0, instance:ResponsiveEDUserManagementTestScript.SearchForAParticularUser@14028087]" started-at="2024-01-23T21:55:41 IST" name="SearchForParticularUser" finished-at="2024-01-23T21:56:16 IST" duration-ms="35313" status="PASS">
+        <test-method signature="SearchForParticularUser()[pri:0, instance:ResponsiveEDUserManagementTestScript.SearchForAParticularUser@2a3a299]" started-at="2024-01-24T10:30:45 IST" name="SearchForParticularUser" finished-at="2024-01-24T10:31:20 IST" duration-ms="34838" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchForParticularUser -->
-        <test-method is-config="true" signature="logoutoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.SearchForAParticularUser@14028087]" started-at="2024-01-23T21:56:16 IST" name="logoutoperation" finished-at="2024-01-23T21:56:20 IST" duration-ms="4474" status="PASS">
+        <test-method is-config="true" signature="logoutoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.SearchForAParticularUser@2a3a299]" started-at="2024-01-24T10:31:20 IST" name="logoutoperation" finished-at="2024-01-24T10:31:25 IST" duration-ms="4657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutoperation -->
-        <test-method is-config="true" signature="closewindow()[pri:0, instance:ResponsiveEDUserManagementTestScript.SearchForAParticularUser@14028087]" started-at="2024-01-23T21:56:20 IST" name="closewindow" finished-at="2024-01-23T21:56:21 IST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="closewindow()[pri:0, instance:ResponsiveEDUserManagementTestScript.SearchForAParticularUser@2a3a299]" started-at="2024-01-24T10:31:25 IST" name="closewindow" finished-at="2024-01-24T10:31:25 IST" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closewindow -->
       </class> <!-- ResponsiveEDUserManagementTestScript.SearchForAParticularUser -->
       <class name="ResponsiveEDUserManagementTestScript.CreateUser">
-        <test-method is-config="true" signature="lanchbrowser()[pri:0, instance:ResponsiveEDUserManagementTestScript.CreateUser@cecf639]" started-at="2024-01-23T21:56:21 IST" name="lanchbrowser" finished-at="2024-01-23T21:56:23 IST" duration-ms="2274" status="PASS">
+        <test-method is-config="true" signature="lanchbrowser()[pri:0, instance:ResponsiveEDUserManagementTestScript.CreateUser@7da10b5b]" started-at="2024-01-24T10:31:25 IST" name="lanchbrowser" finished-at="2024-01-24T10:31:27 IST" duration-ms="2286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lanchbrowser -->
-        <test-method is-config="true" signature="loginoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.CreateUser@cecf639]" started-at="2024-01-23T21:56:23 IST" name="loginoperation" finished-at="2024-01-23T21:56:25 IST" duration-ms="2490" status="PASS">
+        <test-method is-config="true" signature="loginoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.CreateUser@7da10b5b]" started-at="2024-01-24T10:31:27 IST" name="loginoperation" finished-at="2024-01-24T10:31:29 IST" duration-ms="2357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginoperation -->
-        <test-method signature="CreateNewUSer()[pri:0, instance:ResponsiveEDUserManagementTestScript.CreateUser@cecf639]" started-at="2024-01-23T21:56:25 IST" name="CreateNewUSer" finished-at="2024-01-23T21:57:13 IST" duration-ms="47333" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateNewUSer -->
-        <test-method is-config="true" signature="logoutoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.CreateUser@cecf639]" started-at="2024-01-23T21:57:13 IST" name="logoutoperation" finished-at="2024-01-23T21:57:17 IST" duration-ms="4464" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutoperation -->
-        <test-method is-config="true" signature="closewindow()[pri:0, instance:ResponsiveEDUserManagementTestScript.CreateUser@cecf639]" started-at="2024-01-23T21:57:17 IST" name="closewindow" finished-at="2024-01-23T21:57:17 IST" duration-ms="250" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closewindow -->
-      </class> <!-- ResponsiveEDUserManagementTestScript.CreateUser -->
-      <class name="ResponsiveEDPractice.Test1">
-        <test-method is-config="true" signature="lanchbrowser()[pri:0, instance:ResponsiveEDPractice.Test1@2767e23c]" started-at="2024-01-23T21:54:17 IST" name="lanchbrowser" finished-at="2024-01-23T21:54:19 IST" duration-ms="2304" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lanchbrowser -->
-        <test-method is-config="true" signature="loginoperation()[pri:0, instance:ResponsiveEDPractice.Test1@2767e23c]" started-at="2024-01-23T21:54:19 IST" name="loginoperation" finished-at="2024-01-23T21:54:21 IST" duration-ms="2326" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginoperation -->
-        <test-method signature="tests()[pri:0, instance:ResponsiveEDPractice.Test1@2767e23c]" started-at="2024-01-23T21:54:21 IST" name="tests" finished-at="2024-01-23T21:54:36 IST" duration-ms="14819" status="FAIL">
+        <test-method signature="CreateNewUSer()[pri:0, instance:ResponsiveEDUserManagementTestScript.CreateUser@7da10b5b]" started-at="2024-01-24T10:31:29 IST" name="CreateNewUSer" finished-at="2024-01-24T10:32:05 IST" duration-ms="35739" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='GOer']"}
-  (Session info: chrome=120.0.6099.225)
+              <![CDATA[Unable to find element with locator By.xpath: //span[text()='Jr']
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.12.1', revision: '8e34639b11'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a65524d2044419f3c2833b7a8d3b46f8, findElement {using=xpath, value=//span[text()='GOer']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58629}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58629/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a65524d2044419f3c2833b7a8d3b46f8]]>
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='GOer']"}
-  (Session info: chrome=120.0.6099.225)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //span[text()='Jr']
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.12.1', revision: '8e34639b11'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a65524d2044419f3c2833b7a8d3b46f8, findElement {using=xpath, value=//span[text()='GOer']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58629}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58629/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a65524d2044419f3c2833b7a8d3b46f8
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at ResponsiveEDPractice.Test1.tests(Test1.java:20)
+at ResponsiveEDObjectReposotary.CreateUserPopUpPage.ResponsiveEDcreateUser(CreateUserPopUpPage.java:211)
+at ResponsiveEDUserManagementTestScript.CreateUser.CreateNewUSer(CreateUser.java:16)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -184,34 +379,257 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tests -->
-        <test-method is-config="true" signature="logoutoperation()[pri:0, instance:ResponsiveEDPractice.Test1@2767e23c]" started-at="2024-01-23T21:54:36 IST" name="logoutoperation" finished-at="2024-01-23T21:54:41 IST" duration-ms="4417" status="PASS">
+        </test-method> <!-- CreateNewUSer -->
+        <test-method is-config="true" signature="logoutoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.CreateUser@7da10b5b]" started-at="2024-01-24T10:32:05 IST" name="logoutoperation" finished-at="2024-01-24T10:32:07 IST" duration-ms="2030" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e09f72a88eb379d28b68c5a0d304f87, findElement {using=xpath, value=(//span[@class="mat-mdc-button-touch-target"])[5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61056/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e09f72a88eb379d28b68c5a0d304f87]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e09f72a88eb379d28b68c5a0d304f87, findElement {using=xpath, value=(//span[@class="mat-mdc-button-touch-target"])[5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61056/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e09f72a88eb379d28b68c5a0d304f87
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at ResponsiveEDGenericUtility.BaseClass.logoutoperation(BaseClass.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutoperation -->
-        <test-method is-config="true" signature="closewindow()[pri:0, instance:ResponsiveEDPractice.Test1@2767e23c]" started-at="2024-01-23T21:54:41 IST" name="closewindow" finished-at="2024-01-23T21:54:41 IST" duration-ms="256" status="PASS">
+        <test-method is-config="true" signature="closewindow()[pri:0, instance:ResponsiveEDUserManagementTestScript.CreateUser@7da10b5b]" started-at="2024-01-24T10:32:07 IST" name="closewindow" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706072527688" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closewindow -->
-      </class> <!-- ResponsiveEDPractice.Test1 -->
+      </class> <!-- ResponsiveEDUserManagementTestScript.CreateUser -->
       <class name="ResponsiveEDUserManagementTestScript.UserManagementDropDwnHandle">
-        <test-method is-config="true" signature="lanchbrowser()[pri:0, instance:ResponsiveEDUserManagementTestScript.UserManagementDropDwnHandle@1caa0244]" started-at="2024-01-23T21:57:17 IST" name="lanchbrowser" finished-at="2024-01-23T21:57:20 IST" duration-ms="2353" status="PASS">
+        <test-method is-config="true" signature="lanchbrowser()[pri:0, instance:ResponsiveEDUserManagementTestScript.UserManagementDropDwnHandle@219f4597]" started-at="2024-01-24T10:32:07 IST" name="lanchbrowser" finished-at="2024-01-24T10:32:10 IST" duration-ms="2748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lanchbrowser -->
-        <test-method is-config="true" signature="loginoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.UserManagementDropDwnHandle@1caa0244]" started-at="2024-01-23T21:57:20 IST" name="loginoperation" finished-at="2024-01-23T21:57:22 IST" duration-ms="2339" status="PASS">
+        <test-method is-config="true" signature="loginoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.UserManagementDropDwnHandle@219f4597]" started-at="2024-01-24T10:32:10 IST" name="loginoperation" finished-at="2024-01-24T10:32:12 IST" duration-ms="2360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginoperation -->
-        <test-method signature="UserManagementAllDropDwnHandle()[pri:0, instance:ResponsiveEDUserManagementTestScript.UserManagementDropDwnHandle@1caa0244]" started-at="2024-01-23T21:57:22 IST" name="UserManagementAllDropDwnHandle" finished-at="2024-01-23T21:57:41 IST" duration-ms="19331" status="PASS">
+        <test-method signature="UserManagementAllDropDwnHandle()[pri:0, instance:ResponsiveEDUserManagementTestScript.UserManagementDropDwnHandle@219f4597]" started-at="2024-01-24T10:32:12 IST" name="UserManagementAllDropDwnHandle" finished-at="2024-01-24T10:32:12 IST" duration-ms="21" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68aea948c84664ed4ee866835246fb29, findElement {using=xpath, value=//span[text()='Users']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61101}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61101/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68aea948c84664ed4ee866835246fb29]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68aea948c84664ed4ee866835246fb29, findElement {using=xpath, value=//span[text()='Users']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61101}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61101/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68aea948c84664ed4ee866835246fb29
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+at ResponsiveEDUserManagementTestScript.UserManagementDropDwnHandle.UserManagementAllDropDwnHandle(UserManagementDropDwnHandle.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserManagementAllDropDwnHandle -->
-        <test-method is-config="true" signature="logoutoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.UserManagementDropDwnHandle@1caa0244]" started-at="2024-01-23T21:57:41 IST" name="logoutoperation" finished-at="2024-01-23T21:57:46 IST" duration-ms="4365" status="PASS">
+        <test-method is-config="true" signature="logoutoperation()[pri:0, instance:ResponsiveEDUserManagementTestScript.UserManagementDropDwnHandle@219f4597]" started-at="2024-01-24T10:32:12 IST" name="logoutoperation" finished-at="2024-01-24T10:32:14 IST" duration-ms="2014" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68aea948c84664ed4ee866835246fb29, findElement {using=xpath, value=(//span[@class="mat-mdc-button-touch-target"])[5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61101}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61101/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68aea948c84664ed4ee866835246fb29]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68aea948c84664ed4ee866835246fb29, findElement {using=xpath, value=(//span[@class="mat-mdc-button-touch-target"])[5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61101}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61101/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68aea948c84664ed4ee866835246fb29
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at ResponsiveEDGenericUtility.BaseClass.logoutoperation(BaseClass.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutoperation -->
-        <test-method is-config="true" signature="closewindow()[pri:0, instance:ResponsiveEDUserManagementTestScript.UserManagementDropDwnHandle@1caa0244]" started-at="2024-01-23T21:57:46 IST" name="closewindow" finished-at="2024-01-23T21:57:46 IST" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="closewindow()[pri:0, instance:ResponsiveEDUserManagementTestScript.UserManagementDropDwnHandle@219f4597]" started-at="2024-01-24T10:32:14 IST" name="closewindow" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706072534849" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closewindow -->
